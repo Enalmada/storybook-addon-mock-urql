@@ -70,6 +70,5 @@ var globalMockUrql = (globalMocks, config) => {
   return mockData;
 };
 export {
-  groupMocksByMethodAndStatus,
   globalMockUrql
 };

@@ -34,6 +34,7 @@ Use the globalMockUrql() function in your Storybook configuration:
 // globalMocks.ts
 
 import { TASKS_QUERY } from '@/client/gql/queries-mutations';
+import { globalMockUrql, type Mock } from "@enalmada/storybook-addon-mock-urql";
 
 export const globalMocks: Mock[] = [
   {
@@ -71,6 +72,7 @@ export const parameters = {
 ```
 
 ### TODO
+- [ ] examples with error response
 - [ ] review how overrides at the test level work
 
 ### inspiration

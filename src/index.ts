@@ -4,7 +4,7 @@ import { type DocumentNode, type OperationDefinitionNode } from 'graphql';
 
 type RequestMethod = 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE';
 
-type Mock = {
+export type Mock = {
     request: {
         url?: string;
         query: DocumentNode;
@@ -49,7 +49,7 @@ const getOperationNameFromQuery = (query: DocumentNode): string | undefined => {
     return operationNode?.name?.value;
 };
 
-export const groupMocksByMethodAndStatus = (globalMocks: Mock[]): Map<string, Map<string, Mock[]>> => {
+const groupMocksByMethodAndStatus = (globalMocks: Mock[]): Map<string, Map<string, Mock[]>> => {
     const groupedMocks = new Map<string, Map<string, Mock[]>>();
 
     globalMocks.forEach(mock => {
