@@ -57,6 +57,7 @@ export const globalMocks: Mock[] = [
 // .storybook/preview.tsx
 
 import { globalMocks } from './globalMocks';
+import { globalMockUrql } from "@enalmada/storybook-addon-mock-urql";
 
 export const parameters = {
   mockAddonConfigs: {
