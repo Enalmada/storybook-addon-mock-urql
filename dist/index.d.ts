@@ -1,7 +1,7 @@
 import { type Operation, type OperationResult } from '@urql/core';
 import { type DocumentNode } from 'graphql';
 type RequestMethod = 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE';
-type Mock = {
+export type Mock = {
     request: {
         url?: string;
         query: DocumentNode;
@@ -14,7 +14,6 @@ type Mock = {
         result: Partial<OperationResult>;
     };
 };
-export declare const groupMocksByMethodAndStatus: (globalMocks: Mock[]) => Map<string, Map<string, Mock[]>>;
 interface TransformConfig {
     url: string;
     method?: RequestMethod;
