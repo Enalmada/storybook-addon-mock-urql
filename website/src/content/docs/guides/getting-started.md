@@ -33,7 +33,7 @@ type Mock = {
 ```
 
 #### example
-```
+```ts
 // globalMocks.ts
 
 import { TASKS_QUERY } from '@/client/gql/queries-mutations';
@@ -58,7 +58,7 @@ export const globalMocks: Mock[] = [
 
 ### Use the globalMockUrql() function in your Storybook configuration:
 
-```
+```ts
 // .storybook/preview.tsx
 
 import { globalMocks } from './globalMocks';
