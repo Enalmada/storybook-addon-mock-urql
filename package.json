@@ -18,7 +18,7 @@
     "@changesets/cli": "2.27.5",
     "@enalmada/bun-externals": "0.0.6",
     "@ianvs/prettier-plugin-sort-imports": "4.2.1",
-    "@scaleway/changesets-renovate": "2.0.4",
+    "@scaleway/changesets-renovate": "2.1.2",
     "@types/node": "20.16.14",
     "@typescript-eslint/eslint-plugin": "7.10.0",
     "@typescript-eslint/parser": "7.10.0",
