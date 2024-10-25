@@ -16,7 +16,7 @@
   "dependencies": {},
   "devDependencies": {
     "@changesets/cli": "2.27.5",
-    "@enalmada/bun-externals": "0.0.6",
+    "@enalmada/bun-externals": "0.0.7",
     "@ianvs/prettier-plugin-sort-imports": "4.3.1",
     "@scaleway/changesets-renovate": "2.1.2",
     "@types/node": "20.16.14",
