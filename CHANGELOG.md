@@ -1,5 +1,11 @@
 # @enalmada/storybook-addon-mock-urql
 
+## 0.0.5
+
+### Patch Changes
+
+- df36671: dependency updates
+
 ## 0.0.4
 
 ### Patch Changes

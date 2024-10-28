@@ -1,6 +1,6 @@
 {
 	"name": "@enalmada/storybook-addon-mock-urql",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"scripts": {
 		"build": "bun build:clear && bun build:script && bun build:declaration",
 		"build:clear": "rm -rf dist",
