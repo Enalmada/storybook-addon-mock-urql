@@ -31,10 +31,10 @@ var groupMocksByMethodAndStatus = (globalMocks) => {
       groupedMocks.set(apiUrl, new Map);
     }
     const methodStatusMap = groupedMocks.get(apiUrl);
-    if (!methodStatusMap.has(methodStatusKey)) {
-      methodStatusMap.set(methodStatusKey, []);
+    if (!methodStatusMap?.has(methodStatusKey)) {
+      methodStatusMap?.set(methodStatusKey, []);
     }
-    methodStatusMap.get(methodStatusKey).push(mock);
+    methodStatusMap?.get(methodStatusKey)?.push(mock);
   });
   return groupedMocks;
 };
@@ -45,7 +45,7 @@ var globalMockUrql = (globalMocks, config) => {
     methodStatusMap.forEach((mocks, key) => {
       const [defaultMethod, defaultStatusStr] = key.split("-");
       const method = config.method || defaultMethod;
-      const status = config.status || (defaultStatusStr ? parseInt(defaultStatusStr, 10) : 200);
+      const status = config.status || (defaultStatusStr ? Number.parseInt(defaultStatusStr, 10) : 200);
       mockData.push({
         url: apiUrl || config.url,
         method,

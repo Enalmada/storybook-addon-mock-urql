@@ -1,11 +1,11 @@
-import { type Operation, type OperationResult } from '@urql/core';
-import { type DocumentNode } from 'graphql';
-type RequestMethod = 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE';
+import type { Operation, OperationResult } from "@urql/core";
+import type { DocumentNode } from "graphql";
+type RequestMethod = "GET" | "POST" | "PUT" | "PATCH" | "DELETE";
 export type Mock = {
     request: {
         url?: string;
         query: DocumentNode;
-        variables?: Operation['variables'];
+        variables?: Operation["variables"];
         method?: RequestMethod;
     };
     response: {
